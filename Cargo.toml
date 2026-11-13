@@ -1,0 +1,16 @@
+[workspace]
+resolver = "3"
+members = ["crates/*"]
+
+[workspace.package]
+version = "0.0.0"
+edition = "2024"
+rust-version = "1.99"
+repository = "https://github.com/Prathameshppawar/pings"
+# license: not chosen yet, see kb/decisions/0003-license.md
+
+[workspace.lints.rust]
+# Memory safety is a project goal (kb/research/security.md). Any exception needs
+# #[allow(unsafe_code)] on the smallest possible scope, a `// SAFETY:` comment,
+# and an ADR in kb/decisions/.
+unsafe_code = "deny"

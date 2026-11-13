@@ -1,0 +1,5 @@
+# Pinned so every machine and CI run uses the same compiler and lints.
+# Bump deliberately, in its own commit.
+[toolchain]
+channel = "1.99.0"
+components = ["rustfmt", "clippy"]

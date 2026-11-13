@@ -1,0 +1,11 @@
+[package]
+name = "pings"
+description = "The Pings programming language"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+publish = false # until the license is decided (kb/decisions/0003-license.md)
+
+[lints]
+workspace = true
